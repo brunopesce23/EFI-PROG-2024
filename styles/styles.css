@@ -1,0 +1,165 @@
+/* Asegura que el cuerpo ocupe el 100% de la altura y que el footer esté al final */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo del body */
+body {
+  background-color: #0505058a;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  color: #000000; /* Cambia el color del texto del body aquí */
+  display: flex;
+  flex-direction: column;
+}
+
+.index-page {
+  color: #333; /* Cambia este color por el deseado para la página principal */
+}
+
+.product-page {
+  color: #fafafa; /* Cambia este color por el deseado para la página de "sobre nosotros" */
+}
+
+.img-fluid {
+  padding-top: 5%;
+  border-radius: 10px;
+}
+
+/* Estilo del footer para que se mantenga al fondo */
+.footer-custom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Estilo de las tarjetas de productos */
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 250px; /* Ajusta la altura de las imágenes en las tarjetas */
+}
+
+.col-md-4 {
+  width: 100%; /* Modificado para mejor ajuste en pantallas pequeñas */
+  padding: 1%;
+}
+
+.row {
+  margin: 0;
+}
+
+.card-body {
+  height: auto; /* Se ajusta la altura de las tarjetas para que se adapten al contenido */
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.jumbotron h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.nav-item .btn-primary.nav-link {
+  background-color: #7c7c7d;
+  color: white;
+  border-color: #7c7c7d;
+}
+
+.nav-item .btn-primary.nav-link:hover {
+  background-color: #4b4948;
+  color: rgb(255, 255, 255);
+  border-color: #4b4948;
+}
+
+/* Personaliza el color de las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  height: 40px; /* Ajusta el tamaño según sea necesario */
+}
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px; /* Reducir el tamaño del logo en dispositivos móviles */
+  }
+  .col-md-4 {
+    width: 100%; /* Las tarjetas ocuparán el 100% del ancho en dispositivos móviles */
+    padding: 10px;
+  }
+
+  .card-img-top {
+    object-fit: cover; /* Asegura que las imágenes se redimensionen correctamente */
+    height: auto;
+  }
+
+  .card-body {
+    height: auto; /* Permitir que el contenido de la tarjeta se ajuste */
+  }
+
+  .jumbotron h1 {
+    font-size: 24px; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  .jumbotron p {
+    font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+}
+
+/* Asegura que el footer quede al final de la página sin solaparse con contenido */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
